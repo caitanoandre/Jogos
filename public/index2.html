@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <script type="text/javascript" src="Tetris/tetris.js"></script>
+  <link rel="icon" href="Tetris/unnamed.png">
+  <title>Tetris</title>
+  <link rel="stylesheet" href="Tetris/bootstrap/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+
+    body {
+      
+  background-image: url(imagem/fundotetris.jpg);
+    }
+    canvas {
+      margin: 15px 0;
+      border-style: solid;
+      border-width: 3px;
+      border-color: rgb(55, 230, 16);
+    
+    }
+    #game-board {
+      text-align: center;
+      width: 400px;
+      height: 500px;
+      background-image:url('original.gif');
+      background-repeat: no-repeat;
+      background-size: 540px;
+      margin: auto;
+      border-style: solid;
+      border-width: 3px;
+      border-color: rgb(77, 0, 15);
+      position: relative;
+      margin-top: 95px;
+      clip: rect(px,200px,200px,0px);
+      z-index: 5;
+      background-color: rgb(3, 26, 26);
+    }
+    .score-board {
+      font-family: rosemary;
+      font-size: 0.7em;
+      color: aqua;
+      background-color: '#C7FFEE';
+      width: 200;
+      height: 50;
+      float: right;
+      margin-right: 25px;
+      margin-top: 50px ;
+      border-style: solid;
+      border-width: 3px;
+      border-color: rgb(0, 52, 77);
+    }
+    h1 {
+			font-family: 'Permanent Marker', cursive;
+			text-align: center;
+			color:#39ff14;
+		}
+    .img-fluid{
+    width: 150px;
+   display: block;
+margin-left: auto;
+margin-right: auto;
+  }
+
+    .bg-footer {
+ background-color:blue; 
+}
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+       <img src="imagem/logo-removebg-preview.png" class="img-fluid">
+      </div>
+     
+        <a class="navlink" href="Index.html"target="_blank" >Home</a>
+      <a  class="navlink" href="index3.html"target="_blank">Pac Man</a>
+      <a  class="navlink" href="index4.html" target="_blank">Space Invaders</a>
+      
+     
+    </div>
+  </nav>
+ <main>
+  <div id="game-board">
+    <canvas id="my-canvas" width="200" height="400">
+    </canvas>
+    <div class = "score-board"><h2>SCORE</h2><p><h1 id="points">0</h1></p></div>
+    
+    <footer class="container-fliod text-center margin bg-footer">
+     
+  </div>
+ </main>
+  
+
+</body>
+</html>
